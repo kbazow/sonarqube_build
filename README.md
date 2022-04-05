@@ -37,7 +37,7 @@ systemctl restart docker
 
 Navigate to [http://localhost:9000](http://localhost:9000) and ensure the service is up. Login with the default user/pass: `admin`/`admin`.
 
-### Setup long-running branch the prefix
+### Setup long-running branch prefix
 
 Configure the branch plugin to specify what is a long-running branch (master and production branches) under `Administration > System > General`
 
