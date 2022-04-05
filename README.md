@@ -37,37 +37,11 @@ systemctl restart docker
 
 Navigate to [http://localhost:9000](http://localhost:9000) and ensure the service is up. Login with the default user/pass: `admin`/`admin`.
 
-### Setup your long-running branch prefix
+### Setup long-running branch the prefix
 
 Configure the branch plugin to specify what is a long-running branch (master and production branches) under `Administration > System > General`
 
-![Branch Configuration](sonar-branch-config.png)
-
-Set the highlighted regex to: `(branch|release|feature/).*` or whatever your pattern may be.
-
-### Baseline long-running branches
-
-Build your long-running branches and push to your local SonarQube (redo when they change):
-
-```bash
-git co master
-mvn clean install
-mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.branch.name=master
-
-git co feature/mcs
-mvn clean install
-mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.branch.name=feature/mcs
-```
-
-### Evaluate short-term branches
-
-Build short-term branches and push to SonarQube, indicating the merge target to get a differential analysis:
-
-```bash
-git co fix-issue
-mvn clean install
-mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.branch.name=fix-issue -Dsonar.branch.target=feature/mcs
-```
+Set the branches  regex to: `(branch|release|feature/).*` or whatever your pattern is.
 
 ### Stoppping
 
