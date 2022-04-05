@@ -5,7 +5,7 @@
 ### Clone repo
 
 ```bash
-git clone ssh://git@atlassian.metsci.com:7999/~vasak/simple-sonar.git
+git clone ssh://git@bitbucket.metron.local:7999/mis/sonarqube_build.git
 ```
 
 ### Build and start the containers
