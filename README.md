@@ -2,10 +2,11 @@
 
 ## Quick Start
 
-### Clone repo
+### Clone repo from Github. Branch will be Bitbucket on Atlassian.
 
 ```bash
-git clone ssh://git@atlassian.metsci.com:7999/~vasak/simple-sonar.git
+git clone ssh://git@github.com:kbazow/sonarqube_build.git
+git clone git@github.com:kbazow/sonarqube_build.git
 ```
 
 ### Build and start the containers
