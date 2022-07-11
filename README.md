@@ -1,4 +1,4 @@
-# Simple SonarQube Setup
+# SonarQube Quick Scripted Setup
 
 ## Quick Start
 
